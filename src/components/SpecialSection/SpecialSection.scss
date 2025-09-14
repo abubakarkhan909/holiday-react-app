@@ -1,0 +1,175 @@
+@use './../../styles/variables' as *;
+
+.special-section{
+    .specialsectioninner{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .section-header{
+            width: 450px;
+            h4{
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 34px;
+                color: var(--black);
+                margin: 0 0 3px;
+                text-transform: capitalize;
+            }
+            h2{
+                font-size: 65px;
+                font-weight: 700;
+                line-height: 72px;
+                color: var(--black);
+                margin: 0 0 12px;
+                text-transform: uppercase;
+                font-family: $font-family-bold;
+            }
+            p{
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 600;
+                margin: 0 ;
+                color: var(--black);
+            }
+            .btns{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 50px;
+                .sliderbtns{
+                    display: flex;
+                    gap: 18px;
+                }
+                .custom-arrow{
+                    border: none;
+                    background: transparent;
+                    max-width: 65px;
+                    z-index: 2;
+                    padding: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+        .slider-wrap{
+            width: calc(100% - 471px);
+            .swiper-slide{
+                padding: 3px;
+            }
+            .swiper-slide-next{
+                .special-card{
+                    .pre_content{
+                        .linkarrow{
+                            background: url('./../../assets/yellowarrowbtn.svg') center no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1850px) {
+    .special-section{
+        .container{
+            padding-right: 28px;
+        }
+    }
+}
+@media screen and (max-width:1850px) and (min-width:1200px){
+    .special-section{
+        .container{
+            padding-right: 35px;
+        }
+    }
+}
+@media screen and (max-width:1600px) {
+    .special-section {
+        .specialsectioninner{
+            .section-header{
+                width: 375px;
+                h2{
+                    font-size: 55px;
+                    line-height: 63px;
+                }
+                h4{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .btns{
+                    .custom-arrow{
+                        max-width: 55px;
+                    }
+                    .sliderbtns{
+                        gap: 10px;
+                    }
+                }
+            }
+            .slider-wrap{
+                width: calc(100% - 395px);
+            }
+        }
+       
+    }
+}
+@media screen and (max-width:1200px) {
+    .special-section{
+        .specialsectioninner{
+            flex-wrap: wrap;
+            .section-header{
+                width: 100%;
+                .btns{
+                    margin-top: 15px;
+                }
+            }
+            .slider-wrap{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .special-section{
+        .specialsectioninner{
+            gap: 22px;
+            .section-header{
+                h4{
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                h2{
+                    font-size: 42px;
+                    line-height: 48px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .special-section{
+        .specialsectioninner{
+            .section-header{
+                h4{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                h2{
+                    font-size: 35px;
+                    line-height: 41px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

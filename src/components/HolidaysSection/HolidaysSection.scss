@@ -1,0 +1,185 @@
+@use './../../styles/variables' as *;
+
+.holidays-section{
+    padding: 77px 0;
+    .section-header{
+        display: grid;
+        grid-template-columns: 1fr 220px;
+        gap: 160px;
+        align-items: center;
+        margin-bottom: 22px;
+        h4{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 34px;
+            color: var(--black);
+            margin: 0 0 3px;
+            text-transform: capitalize;
+        }
+        h2{
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 72px;
+            color: var(--black);
+            margin: 0 0 5px;
+            text-transform: uppercase;
+            font-family: $font-family-bold;
+        }
+        p{
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 600;
+            margin: 0 ;
+            color: var(--black);
+        }
+        .see-all{
+            margin-left: auto;
+            width: fit-content;
+        }
+    }
+    
+    .slider-wrap{
+        position: relative;
+        .swiper-slide:nth-child(odd)  {
+            padding-top: 0;
+        }
+        .swiper-slide:nth-child(even) {
+            padding-top: 88px;
+        }
+        .custom-arrow{
+            border: none;
+            background: transparent;
+            position: absolute;
+            max-width: 80px;
+            z-index: 2;
+            
+            padding: 0;
+            &.custom-prev{
+                left: -38px;
+                bottom: 146px;
+            }
+            &.custom-next{
+                right: -38px;
+                top: 88px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1600px) {
+    .holidays-section{
+        .section-header{
+            grid-template-columns: 1fr 210px;
+            gap: 50px;
+            h2{
+                font-size: 55px;
+                line-height: 63px;
+            }
+            h4{
+                font-size: 24px;
+                line-height: 30px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .slider-wrap {
+            .custom-arrow{
+                max-width: 65px;
+                &.custom-next {
+                    right: -25px;
+                }
+                &.custom-prev{
+                    left: -25px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .holidays-section{
+        .section-header{
+            grid-template-columns: 1fr;
+            gap: 15px;
+            .btns{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .sliderbtns{
+                    display: flex;
+                    gap: 10px;
+                    .custom-arrow {
+                        border: none;
+                        background: transparent;
+                        max-width: 55px;
+                        z-index: 2;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .see-all{
+                margin-left: 0;
+                width: fit-content;
+            }
+        }
+        .slider-wrap {
+            .custom-arrow{
+                max-width: 55px;
+                &.custom-next {
+                    right: -18px;
+                }
+                &.custom-prev{
+                    left: -18px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .holidays-section{
+        padding: 50px 0;
+        .section-header{
+            h4{
+                font-size: 20px;
+                line-height: 25px;
+            }
+            h2{
+                font-size: 42px;
+                line-height: 48px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .slider-wrap{
+            .swiper-slide:nth-child(even) {
+                padding-top: 45px;
+            }
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .holidays-section{
+        .section-header{
+            h4{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            h2{
+                font-size: 35px;
+                line-height: 41px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .slider-wrap{
+            .swiper-slide:nth-child(even) {
+                padding-top: 0;
+            }
+        }
+    }
+}

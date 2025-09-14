@@ -1,0 +1,265 @@
+@use '../../styles/variables' as *;
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    .header_inner{
+        max-width: 1851px;
+        padding: 19px 52px 0;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        align-items: center;
+        .menu-btn{
+            display: flex;
+            align-items: center;
+            gap: 8.9px;
+            padding: 0;
+            border: none;
+            background: transparent;
+            width: fit-content;
+            cursor: pointer;
+            img{
+                max-width: 40px;
+                height: auto;
+            }
+            span{
+                text-transform: uppercase;
+                font-size: 25px;
+                font-weight: 700;
+                color: var(--white);
+                font-family: $font-family-bold;
+            }
+        }
+        a{
+            display: inline-block;
+        }
+        .logo{
+            text-align: center;
+        }
+        .right{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 24px;
+            a{
+                color: var(--white);
+            }
+        }
+        .phone{
+            display: grid;
+            grid-template-columns: 1fr 35px;
+            gap: 17px;
+            align-items: center;
+            .numberdetail{
+                text-align: right;
+            }
+            h4{
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+                color: var(--white);
+            }
+            h3{
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 500;
+                color: var(--white);
+            }
+        }
+        .whatsappheaderlink{
+            position: relative;
+            margin-left: 25px;
+            &::before{
+                content: "";
+                position: absolute;
+                left: -25px;
+                top: 12px;
+                width: 2px;
+                height: 40px;
+                background-color: var(--white);
+            }
+        }
+    }
+    .center-nav {
+        padding-top: 20px;
+        transition: all 0.3s ease;  
+        animation: slideDown 0.5s ease forwards;
+        &.close{
+            
+            animation: slideUp 0.5s ease forwards;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+            li{
+                a{
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: var(--white);
+                    text-transform: capitalize;
+                    font-weight: 600;
+
+                    &:hover{
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide up keyframe */
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+    display: none;
+  }
+}
+
+@media screen and (max-width:1600px) {
+    header {
+        .header_inner{
+            gap: 20px;
+            padding: 18px 35px 0px;
+            .menu-btn{
+                img{
+                    max-width: 35px;
+                }
+                span{
+                    font-size: 22px;
+                }
+            }
+            .right{
+                gap: 20px;
+            }
+            .phone{
+                gap: 15px;
+                grid-template-columns: 1fr 28px;
+                h4 {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                h3{
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
+            .whatsappheaderlink{
+                margin-left: 20px;
+                &::before{
+                    left: -20px;
+                    top: 5px;
+                    height: 36px;
+                }
+                img{
+                        max-width: 40px;
+                }
+            }
+            .logo{
+                img{
+                    max-width: 250px;
+                }
+            }
+        }
+        .center-nav{
+            padding-top: 15px;
+            ul{
+                gap: 30px;
+                li{
+                    a{
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    header .header_inner {
+        gap: 20px;
+        padding: 16px 20px 0px;
+    }
+}
+@media screen and (max-width:992px) {
+    header{
+        .header_inner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .menu-btn{
+                order: 1;
+            }
+            .right{
+                width: 100%;
+                order: -1;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+  header{
+    .header_inner{
+        .logo img {
+            max-width: 220px;
+        }
+    }
+    .center-nav {
+        max-width: 300px;
+        background: var(--white);
+        border-radius: 8px;
+        padding: 15px;
+        margin: 15px 20px 0 auto;
+        ul{
+            flex-direction: column;
+            gap: 15px;
+            li{
+                a{
+                    color: var(--black);
+                }
+            }
+        }
+    }
+  }
+}
+@media (max-width: 576px) {
+      header{
+        .header_inner{
+            gap: 16px;
+            .logo img {
+                max-width: 201px;
+            }
+            .menu-btn{
+                img {
+                    max-width: 28px;
+                }
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

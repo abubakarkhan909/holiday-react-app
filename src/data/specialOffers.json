@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Disney’s Hotel New York – The Art of Marvel",
+    "description": "Exclusive Deal with Special Discount - Disney’s Hotel New York - The Art of Marvel.",
+    "image": "balu.png",
+    "price": 599,
+    "rating": 4,
+    "ratingQuantity": 7,
+    "offers": ["flight", "hotel", "breakfast", "visa", "transfer"],
+    "link": "/book/1"
+  },
+  {
+    "id": 2,
+    "title": "Paris Holiday Package",
+    "description": "Romantic Paris tour with 3 nights stay and guided city visit.",
+    "image": "special2.png",
+    "price": 749,
+    "rating": 2,
+    "ratingQuantity": 12,
+    "offers": ["flight", "hotel", "breakfast"],
+    "link": "/book/2"
+  },
+  {
+    "id": 3,
+    "title": "Dubai Desert Safari",
+    "description": "Luxury Dubai holiday with Desert Safari & Burj Khalifa visit.",
+    "image": "balu.png",
+    "price": 899,
+    "rating": 4,
+    "ratingQuantity": 20,
+    "offers": ["flight", "hotel", "transfer"],
+    "link": "/book/3"
+  },
+    {
+    "id": 2,
+    "title": "Paris Holiday Package",
+    "description": "Romantic Paris tour with 3 nights stay and guided city visit.",
+    "image": "special2.png",
+    "price": 749,
+    "rating": 2,
+    "ratingQuantity": 12,
+    "offers": ["flight", "hotel", "breakfast"],
+    "link": "/book/2"
+  },
+  {
+    "id": 3,
+    "title": "Dubai Desert Safari",
+    "description": "Luxury Dubai holiday with Desert Safari & Burj Khalifa visit.",
+    "image": "balu.png",
+    "price": 899,
+    "rating": 4,
+    "ratingQuantity": 20,
+    "offers": ["flight", "hotel", "transfer"],
+    "link": "/book/3"
+  }
+]
