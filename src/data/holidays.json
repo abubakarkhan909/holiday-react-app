@@ -2,37 +2,37 @@
   {
     "id": 1,
     "title": "Barcelona",
-    "image": "barcolona.png",
+    "image": "/assets/barcolona.png",
     "price": 785
   },
   {
     "id": 2,
     "title": "Santorini",
-    "image": "santroni.png",
+    "image": "/assets/santroni.png",
     "price": 800
   },
   {
     "id": 3,
     "title": "Barcelona",
-    "image": "Barcelona_klein.png",
+    "image": "/assets/Barcelona_klein.png",
     "price": 900
   },
   {
     "id": 4,
     "title": "Maldives",
-    "image": "lisbon.png",
+    "image": "/assets/lisbon.png",
     "price": 200
   },
   {
     "id": 5,
     "title": "Lisbon",
-    "image": "lisbon-Gett.png",
+    "image": "/assets/lisbon-Gett.png",
     "price": 279
   },
   {
     "id": 6,
     "title": "Barcelona",
-    "image": "barcolona.png",
+    "image": "/assets/barcolona.png",
     "price": 229
   }
 ]

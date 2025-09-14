@@ -15,7 +15,7 @@ export default function Home({ items,specialOffers }) {
       {aboutContent.map((section) => (
         <ContentWithImage 
           key={section.id} 
-          image={`/src/assets/${section.image}`} 
+          image={section.image} 
           content={section.content} 
         />
       ))}

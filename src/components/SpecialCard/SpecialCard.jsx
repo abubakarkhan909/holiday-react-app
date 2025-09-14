@@ -61,7 +61,7 @@ export default function SpecialCard({ specialoffer }) {
       </div>
 
       <div className='pre_img'>
-        <img src={`/src/assets/${specialoffer.image}`} alt={specialoffer.title} />
+        <img src={specialoffer.image} alt={specialoffer.title} />
       </div> 
     </article>
   );

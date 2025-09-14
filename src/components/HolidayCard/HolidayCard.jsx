@@ -4,7 +4,7 @@ export default function HolidayCard({ holiday }) {
   return (
     <article className="holiday-card">
       <div className='pre_img'>
-        <img src={`/src/assets/${holiday.image}`} alt={holiday.title} />
+        <img src={holiday.image}  alt={holiday.title} />
       </div> 
       <div className='pre_content'>
         <div className='pre_text'>
