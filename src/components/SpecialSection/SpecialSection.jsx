@@ -31,10 +31,10 @@ export default function SpecialSection({ items }) {
                   <img src={IMAGES.btnarrowpurple} alt="" />
                 </Link>
                 <div className="sliderbtns">
-                  <button className="custom-prev custom-arrow left">
+                  <button className="custom-prev-special custom-arrow left">
                     <img src={IMAGES.leftArrow} alt="leftarrow" />
                   </button>
-                  <button className="custom-next custom-arrow right">
+                  <button className="custom-next-special custom-arrow right">
                     <img src={IMAGES.rightArrow} alt="rightarrow" />
                   </button>
                 </div>
@@ -46,8 +46,8 @@ export default function SpecialSection({ items }) {
             <Swiper
               modules={[Navigation]}
               navigation={{
-                nextEl: ".custom-next",
-                prevEl: ".custom-prev",
+                nextEl: ".custom-next-special",
+                prevEl: ".custom-prev-special",
               }}
               spaceBetween={10}
               slidesPerView={3}
